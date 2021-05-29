@@ -63,11 +63,26 @@ COVID-19의 확산으로 우리나라는 물론 전 세계 사람들은 경제�
 ### Install Requirements
 - `pip install -r requirements.txt`
 
+### Prepare data label
+- `python labeling.py --config config_name`
+- You can use various data preprocessing to label and effectively manage data.
+- Please refer to the label_config.yml for details.
+- You can check the data analysis result example in file `label_anaylsis.ipynb`.
+
+### Check data augmentation
+- check_augmentation.ipynb
+- You can see the applied augmentation.
+
 ### Training
-- `SM_CHANNEL_TRAIN=[train image dir] SM_MODEL_DIR=[model saving dir] python train.py`
+- `python main.py --config config_name`
+- You can choose 3 types model.
+    - MultiConvModel
+    - MultiSampleDropOut
+    - MultiFCModel
+- Please refer to the config.yml for details.
 
 ### Inference
-- `SM_CHANNEL_EVAL=[eval image dir] SM_CHANNEL_MODEL=[model saved dir] SM_OUTPUT_DATA_DIR=[inference output dir] python inference.py`
-
-### Evaluation
-- `SM_GROUND_TRUTH_DIR=[GT dir] SM_OUTPUT_DATA_DIR=[inference output dir] python evaluation.py`
+- `python inference.py`
+- It includes two tasks.
+    - Ensemble(soft voting)
+    - Test time augmentation
