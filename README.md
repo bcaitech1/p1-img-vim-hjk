@@ -11,9 +11,12 @@
 
 <br></br>
 ## 🎖 최종 결과 <a name = 'Result'></a>
-- Image Classification :
-    - private LB : F1-`0.7526` / Acc-`80.8095%` (33등)
-    - Public LB :  F1-`0.7754` / Acc-`81.3968%` (13등)
+- private LB (33등)
+    - F1 : `0.7526` 
+    - Acc : `80.8095%` 
+- Public LB (13등)
+    - F1 : `0.7754`
+    - Acc : `81.3968%` 
 
 
 <br></br>
