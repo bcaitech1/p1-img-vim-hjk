@@ -1,0 +1,39 @@
+Base:
+    kfold: 0
+    stratified: False
+    modify_gender_ambiguity: False
+    age_filter: 60
+    
+# Custom:
+#    kfold: "Split dataset for k-fold cross validation."
+#    stratified: "For stratified k-fold cross validation."
+#    modify_gender_ambiguity: "Modify ambiguous data.(Thank you for T1034's EDA.)"
+#    age_filter: "You can adjust the maximum age value to under 60."
+
+5_Kfold_Modify_59:
+    kfold: 5
+    stratified: False
+    modify_gender_ambiguity: True
+    age_filter: 59
+
+5_S_Kfold_Modify_59:
+    kfold: 5
+    stratified: True
+    modify_gender_ambiguity: True
+    age_filter: 59
+    
+6_S_Kfold_Modify_58:
+    kfold: 6
+    stratified: True
+    modify_gender_ambiguity: True
+    age_filter: 58
+    
+5_S_Kfold_Modify_58:
+    kfold: 6
+    stratified: True
+    modify_gender_ambiguity: True
+    age_filter: 58
+
+
+
+    

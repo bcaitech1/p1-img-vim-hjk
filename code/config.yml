@@ -1,0 +1,172 @@
+MultiSampleDropout:
+    model_name: "MultiSampleDropout_"
+    multi_head: False
+    num_epochs: 5
+    num_workers: 4
+    optimizer: 'Adam'
+    scheduler: 'reduce'
+    criterion: 'focal'
+    learning_rate: 0.00002
+    weight_decay: 0.0
+    train_log_interval: 20
+    cross_valid: True
+    kfold: 5
+    whole_label_path: '../label/5_S_Kfold_Modify_58/whole_label.csv'
+    train_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/train/'
+    val_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/val/'
+    batch_size: 16
+    seed: 7916    
+    
+MultiFCModel_1:
+    model_name: "resnest101e"
+    multi_head: True
+    num_epochs: 5
+    num_workers: 4
+    optimizer: 'AdamW'
+    scheduler: 'step'
+    criterion: 'crossentropy'
+    learning_rate: 0.00001
+    weight_decay: 0.0
+    train_log_interval: 20
+    cross_valid: False
+    kfold: 0
+    whole_label_path: '../label/5_S_Kfold_Modify_58/whole_label.csv'
+    train_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/train/'
+    val_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/val/'
+    batch_size: 32
+    seed: 1611
+    
+MultiFCModel_2:
+    model_name: "resnext50_32x4d"
+    multi_head: True
+    num_epochs: 4
+    num_workers: 4
+    optimizer: 'AdamP'
+    scheduler: 'step'
+    criterion: 'crossentropy'
+    learning_rate: 0.00001
+    weight_decay: 0.0
+    train_log_interval: 20
+    cross_valid: False
+    kfold: 0
+    whole_label_path: '../label/5_S_Kfold_Modify_58/whole_label.csv'
+    train_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/train/'
+    val_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/val/'
+    batch_size: 32
+    seed: 1050    
+    
+MultiFCModel_3:
+    model_name: "efficientnet_b3"
+    multi_head: True
+    num_epochs: 4
+    num_workers: 4
+    optimizer: 'Adam'
+    scheduler: 'step'
+    criterion: 'crossentropy'
+    learning_rate: 0.00001
+    weight_decay: 0.0
+    train_log_interval: 20
+    cross_valid: False
+    kfold: 0
+    whole_label_path: '../label/5_S_Kfold_Modify_58/whole_label.csv'
+    train_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/train/'
+    val_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/val/'
+    batch_size: 32
+    seed: 4137
+    
+MultiFCModel_4:
+    model_name: "xception"
+    multi_head: True
+    num_epochs: 5
+    num_workers: 4
+    optimizer: 'AdamW'
+    scheduler: 'step'
+    criterion: 'crossentropy'
+    learning_rate: 0.00001
+    weight_decay: 0.0
+    train_log_interval: 20
+    cross_valid: False
+    kfold: 0
+    whole_label_path: '../label/5_S_Kfold_Modify_58/whole_label.csv'
+    train_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/train/'
+    val_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/val/'
+    batch_size: 32
+    seed: 3059
+
+MultiFCModel_5:
+    model_name: "dm_nfnet_f0"
+    multi_head: True
+    num_epochs: 4
+    num_workers: 4
+    optimizer: 'AdamP'
+    scheduler: 'step'
+    criterion: 'crossentropy'
+    learning_rate: 0.00001
+    weight_decay: 0.0
+    train_log_interval: 20
+    cross_valid: False
+    kfold: 0
+    whole_label_path: '../label/5_S_Kfold_Modify_58/whole_label.csv'
+    train_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/train/'
+    val_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/val/'
+    batch_size: 16
+    seed: 130
+
+MultiFCModel_6:
+    model_name: "hrnet_w40"
+    multi_head: True
+    num_epochs: 4
+    optimizer: 'AdamW'
+    scheduler: 'step'
+    criterion: 'crossentropy'
+    num_workers: 4
+    learning_rate: 0.00001
+    weight_decay: 0.0
+    train_log_interval: 20
+    cross_valid: False
+    kfold: 0
+    whole_label_path: '../label/5_S_Kfold_Modify_58/whole_label.csv'
+    train_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/train/'
+    val_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/val/'
+    batch_size: 32
+    seed: 2717
+
+MultiFCModel_7:
+    model_name: "tf_efficientnet_b7_ns"
+    multi_head: True
+    num_epochs: 4
+    num_workers: 4
+    optimizer: 'AdamP'
+    scheduler: 'step'
+    criterion: 'crossentropy'
+    learning_rate: 0.00001
+    weight_decay: 0.0
+    train_log_interval: 20
+    cross_valid: False
+    kfold: 0
+    whole_label_path: '../label/5_S_Kfold_Modify_58/whole_label.csv'
+    train_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/train/'
+    val_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/val/'
+    batch_size: 16
+    seed: 8274
+    
+MultiFCModel_8:
+    model_name: "xception65"
+    multi_head: True
+    num_epochs: 4
+    optimizer: 'Adam'
+    scheduler: 'step'
+    criterion: 'crossentropy'
+    num_workers: 4
+    learning_rate: 0.00001
+    weight_decay: 0.0
+    train_log_interval: 20
+    cross_valid: False
+    kfold: 0
+    whole_label_path: '../label/5_S_Kfold_Modify_58/whole_label.csv'
+    train_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/train/'
+    val_label_path: '../label/5_S_Kfold_Modify_58/kfold_label/val/'
+    batch_size: 32
+    seed: 707
+
+    
