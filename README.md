@@ -35,7 +35,6 @@ COVID-19의 확산으로 우리나라는 물론 전 세계 사람들은 경제�
 
 <br></br>
 ## 💻 CODE 설명<a name = 'Code'></a>
-## Getting Started    
 ### Dependencies
 - torch==1.6.0
 - torchvision==0.7.0                                                              
